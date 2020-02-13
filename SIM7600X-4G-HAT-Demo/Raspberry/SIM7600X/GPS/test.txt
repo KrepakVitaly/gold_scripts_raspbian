@@ -1,0 +1,48 @@
+AT
+OK
+AT+CREG?
++CREG: 0,1
+Start GPS session...
+AT+CGPS=1,1
+OK
+AT+CGPSINFO
++CGPSINFO: 
+,,,,,,,,
+
+OK
+AT+CGPSINFO
++CGPSINFO: 
+,,,,,,,,
+
+OK
+AT+CGPSINFO
++CGPSINFO: 
+,,,,,,,,
+
+OK
+AT+CGPSINFO
++CGPSINFO: 
+,,,,,,,,
+
+OK
+AT+CGPSINFO
++CGPSINFO: 
+,,,,,,,,
+
+OK
+AT+CGPSINFO
++CGPSINFO: 
+,,,,,,,,
+
+OK
+AT+CGPSINFO
++CGPSINFO: 
+5547.540473,N,03808.140006,E,120220,195211.0,143.9,0.0,0.0
+
+OK
+Latitude is 55.792339 N
+Longitude is 38.135666 E
+Day Month Year is 120220
+UTC time is 195211
+AT+CGPS=0
+OK
