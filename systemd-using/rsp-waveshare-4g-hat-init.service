@@ -1,0 +1,13 @@
+[Unit]
+Description=Up4GConnection
+Before=rsp-dummy-server.service
+After=rsp-waveshare-4g-hat-power-reboot.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=True
+ExecStart=/home/pi/waveshare_4g_hat_scripts/sim7600_4G_hat_init.sh
+
+[Install]
+WantedBy=multi-user.target
+

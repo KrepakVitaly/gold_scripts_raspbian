@@ -1,0 +1,11 @@
+[Unit]
+Description=Setup waveshare 4g modem connection
+After=network.target
+
+[Service]
+Restart=always
+RestartSec=60
+ExecStart=/home/pi/waveshare_4g_hat_scripts/sim7600_power_reboot.sh
+
+[Install]
+WantedBy=multi-user.target
