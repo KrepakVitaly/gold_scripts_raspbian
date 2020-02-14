@@ -11,7 +11,7 @@ ip link set wwan0 down
 echo 'Y' | tee /sys/class/net/wwan0/qmi/raw_ip
 sudo ip link set wwan0 up
 
-qmicli -p -d /dev/cdc-wdm0 --device-open-net='net-raw-ip|net-no-qos-header' --wds-start-network=apn='internet.mts.ru',username='mts',password='mtsx',ip-type=4 --client-no-release-cid
+qmicli -p -d /dev/cdc-wdm0 --device-open-net='net-raw-ip|net-no-qos-header' --wds-start-network=apn='internet.sberbank-tele.com',username='internet',password='internet',ip-type=4 --client-no-release-cid
 
 
 udhcpc -b -i wwan0
